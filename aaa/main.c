@@ -7,9 +7,20 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hello, World!\n");
+    int x=0,y=1, sum=0, n,i=3,cnt=0;
+    scanf("%d", &n);
+    printf("%d %d ", x,y);
+    while(i<=n)
+    {
+        cnt++; sum=x+y;
+        printf("%d ", sum);
+        if(cnt%2 == 1) x=sum;
+        else y=sum;
+        i++;
+    }
     return 0;
 }
